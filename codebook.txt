@@ -1,0 +1,27 @@
+This Readme file accompanies plot1.R, plot2.R, plot3.R, and plot4.R R scripts.
+
+These codes produce plot1.png, plot2.png, plot3.png, and plot4.png using data from the
+UC Irvine Machine Learning Repository, specifically the Electric Power Consumption data set.
+
+Each of the four scripts requires the data set to be in the working directory.  If the data set is not, 
+then the scripts will error and return a message that the file is not found and should be included in the
+working directory.
+
+Each script follows the same general form:
+-import Electric Power Consumption data set
+-subset the data set to include observations taken only from February 1st or 2nd, 2007
+-check for and remove incomplete rows, those rows containing observations with "?" as values
+-create a new variable as a concatenation of the Date and Time variables and call it DateTime
+-transform the DateTime variable to the form "day/month/year hour:minute:second"
+-plot the data using the appropriate parameters
+-save the file as PNG image
+
+To the run the scripts using the R command line, type:
+-plot1()
+-plot2()
+-plot3()
+-plot4()
+None of the functions require parameters. 
+
+At the completion of each script a message will indicate the PNG the function generates 
+is saved to working directory.
